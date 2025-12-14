@@ -6,9 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      alert("bienvenidos a mi pagina de recetas, pronto tendremos nuevas recetas, busquennos para conocerlas y probarlas, sin nada mas que decir ¡disfruten!")
+    </script>
   </head>
   <body>
-<header class = "header">
+<header class = "header" id="header">
   <img src="./imagenes/logo.jpg" alt="imagen de logo">
   Empanadas Tucumanas
   <div class="contactos">
@@ -20,6 +23,8 @@
 </header>
 <br>
 <br>
+<button class="btn btn-dark"onclick="oscuro()">Modo oscuro</button>
+<br>
 <br>
 <div class="alert alert-warning" role="alert">
   ¡Alerta de receta deliciosa!
@@ -29,7 +34,7 @@
   Esta es mi primer receta y pagina web, siganme para mas
 </h1>
 <br>
-<button type="button" class="btn btn-primary">me gusta esta receta</button>
+<button onclick="boton()"type="button" class="btn btn-primary" id="boton">me gusta esta receta</button>
 <br>
 <br><br><br><br>
 <main class="recetacompleta">
@@ -88,10 +93,9 @@
   <a class="btn btn-primary" href="https://edu.potrerodigital.org/login/index.php?loginredirect=1" role"button" target="_blank">sitio de potrero</a>
   <br>
 </section>
-
 <br>
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WuxS-k5SOsY?si=40TNJx14J1cTl5pc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mAgTzTu2HBw?si=ls_Ph7_5DjlDazVd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <br>
 <a href="https://wa.me/" class="whatsapp" target="_blank">
@@ -143,11 +147,15 @@
   </div>
 </div>
 </div>
+<br>
+<br>
+<br>
 </aside>
 <br>
 <br>
-<footer class= "footer">
+<footer class="footer" id="footer">
 <iframe class="mapareceta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975796651!2d-65.3049951248154!3d-26.83283503327894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1760574358414!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 <div class="contactos2">
   <a href="https://www.instagram.com/" target="_blank" ><img src="./imagenes/insta.png" alt="imagen con link" class = "instagram"></a>
   <a href="https://www.tiktok.com/" target="_blank" ><img src="./imagenes/tiktok.png" alt="imagen con link" class = "tiktok"></a>
@@ -155,15 +163,11 @@
   <a href="https://www.facebook.com/?locale=es_LA" target="_blank" ><img src="./imagenes/facebook.jpg" alt="imagen con link" class = "facebook"></a>
 </div>
 <div class="info">
-<h5>desarrollado con <3 por Benjamin Insaurralde
-  <br>
-email: m4d3r1t72@gmail.com</h5>
-
+<button class="btn btn-secondary"onclick="webmaster()"class="boton" >webmaster</button>
 </div>
-
 </footer>
 <br>
-<br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./js/javascript.js"></script>
   </body>
 </html>

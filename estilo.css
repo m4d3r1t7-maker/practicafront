@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
  .header {display:flex;
    height:20vh;
    justify-content:space-around;
-   color: #CC2525;
     text-decoration: underline;
   font-size:28px;
  align-items:center;
  flex-wrap:wrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
      background-color:#A1661A;
-
   }
+.video {display:flex;
+justify-content:center;
+width:100vw}
 .cards img {height:200px}
 
  .contactos {display:flex;
@@ -29,11 +31,11 @@ gap:5px;
 justify-content:space-around}
 
 body { background: #F5A94E;
-      font-family: "Verdana" Verdana;}
+      font-family: "Playfair Display", Verdana;}
 
 h2 { color: #B5722A; }
 
-
+.boton
 .primerreceta { font-size:20px;
   font-family: "Arial", Arial; }
 
